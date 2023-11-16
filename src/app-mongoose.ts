@@ -11,7 +11,7 @@ const addCategoria = async (titolo: string, sottotitolo: string, descrizione: st
 
         let cat = new Categoria();
 
-        cat.titolo = titolo.toUpperCase();
+        cat.titolo = titolo;
         cat.sottotitolo = sottotitolo;
         cat.descrizione = descrizione;
 
@@ -106,8 +106,8 @@ const getCategoriaById = async (id: string) => {
     }
 }
 
-// addCategoria("Cucina", "L'arte della Cucina", "Descrizione bella ed ampia");
+addCategoria("Cucina", "L'arte della Cucina", "Descrizione bella ed ampia");
 // getCategorie();
 // updateCategoria("6554b33f058cd5b49b665a8f", "CUCINA", "Sottotitolo", "Descrizione bella ed ampia", false);
-deleteCategoria("6554b33f058cd5b49b665a8f");
+// deleteCategoria("6554b33f058cd5b49b665a8f");
 
